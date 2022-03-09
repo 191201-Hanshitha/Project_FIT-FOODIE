@@ -1,0 +1,29 @@
+<head>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+</head>
+<div class="container">
+    <form #loginForm="ngForm"(ngSubmit) = "loginSubmit2(loginForm.value)" class = "form-group"novalidate>
+
+        <div class = "input-group">
+        <span class ="input-group-addon"><i class ="glyphicon glyphicon-user"></i></span>
+        <input type="text" placeholder="username" ngModel name="username" #username = ngModel class="form-control" required minlength=4 maxlength="20">
+        </div>
+
+        <div class = "input-group">
+        <span class ="input-group-addon"><i class ="glyphicon glyphicon-lock"></i></span>
+        <input type = "password" placeholder= "password" ngModel name="password" #password = ngModel class = "form-control" required minlength=4 maxlength="20">
+        </div>
+
+        <button class="btn btn-primary"[disabled] = "!loginForm.valid">Submit</button>
+    </form>
+    
+    <div class = "text-danger">
+    <div *ngIf="username.errors?.required && username.touched">Enter data in name field</div>
+    <div *ngIf="username.errors?.minlength && username.touched">Enter data in name field atleast 4 chars</div>
+    
+    <div *ngIf="password.errors?.required && password.touched">Enter data in password field</div>
+    <div *ngIf="password.errors?.minlength && password.touched">Enter data in password field atleast 4 chars</div>
+    </div>
+    </div>
