@@ -35,3 +35,7 @@ mat-toolbar {
   height: 100%;
   border: none;
 } 
+.body-review:hover{
+    transform: translateY(-20px);
+    transition: all ease 0.1s;
+}
