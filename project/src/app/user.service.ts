@@ -28,8 +28,8 @@ export class UserService {
      return this.httpClient.post('http://localhost:3000/register',user);
    }
 
-   getEmployeeByEmailAndPassword(loginForm: any){
-     return this.httpClient.get('http://localhost:3000/login/'+loginForm.email+"/"+loginForm.password).toPromise();
+   getUserByEmailAndPassword(loginForm: any){
+     return this.httpClient.get('http://localhost:3000/login/'+loginForm.username+"/"+loginForm.password).toPromise();
    }
 
    
