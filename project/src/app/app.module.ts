@@ -23,6 +23,13 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import { ExampleComponent } from './example/example.component';
 import { YouTubePlayerModule } from '@angular/youtube-player';
+import { ToddlerComponent } from './toddler/toddler.component';
+import { ChildrenComponent } from './children/children.component';
+import { AdolescentComponent } from './adolescent/adolescent.component';
+import { MadultComponent } from './madult/madult.component';
+import { FadultComponent } from './fadult/fadult.component';
+import { PregComponent } from './preg/preg.component';
+import { ElderageComponent } from './elderage/elderage.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +43,14 @@ import { YouTubePlayerModule } from '@angular/youtube-player';
     BlogComponent,
     FitnessComponent,
     YogaComponent,
-    ExampleComponent
+    ExampleComponent,
+    ToddlerComponent,
+    ChildrenComponent,
+    AdolescentComponent,
+    MadultComponent,
+    FadultComponent,
+    PregComponent,
+    ElderageComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,30 @@
+.container{
+    /* background-image: linear-gradient(rgba(229, 226, 226, 0.308),rgba(207, 204, 204, 0.294)),url('https://thumbs.dreamstime.com/z/time-to-start-healthy-eating-weight-loss-diet-time-to-start-healthy-eating-weight-loss-diet-diet-plan-schedule-clock-pen-198355906.jpg'); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;*/
+  border: 5px solid black; 
+  margin-top: 20px;
+  margin-bottom: 150px;
+  margin-right: 160px;
+  margin-left: 110px;
+  width: 1200px;
+  height: 94%;
+  position: absolute;
+  background-color: rgba(249, 248, 252, 0.883);
+  text-indent: 2px;
+}
+.bg-img {
+    background-image: url('https://media.istockphoto.com/photos/food-background-with-ingredients-for-pasta-picture-id1063679776?k=20&m=1063679776&s=170667a&w=0&h=jOCgsNvF4slkOnIFbc7vw9rV7RBv0owon40KZdZZNtQ=');
+    /* background-image: url("https://www.vivosano.org/wp-content/uploads/fondo-CONFERENCIA-NUTRICION-ANTIINFALMATORIA-abril.jpg"); */
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.age{
+    color: rgb(12, 28, 248);
+    font-size: 21px;
+    margin-left: 2px;
+}

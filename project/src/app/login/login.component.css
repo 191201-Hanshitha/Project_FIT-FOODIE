@@ -9,10 +9,18 @@
     margin-left: 300px;
     width: 600px;
 }
+.navbar-brand{
+    font-size: 25px;
+    margin-right: 2px;
+}
+.nav-link{
+    font-size: 17px;
+    text-indent:3px;
+}
 .bg-img {
         /* The image used */
         background-image: url("https://www.vivosano.org/wp-content/uploads/fondo-CONFERENCIA-NUTRICION-ANTIINFALMATORIA-abril.jpg");
-        height: 90%;
+        height: 100%;
         width: 100%;
         background-repeat: no-repeat;
         background-size: cover;
@@ -95,3 +103,6 @@ a:hover{
 .loginbox a:hover{
     color:blue;
 } */
+mat-toolbar {
+    justify-content: space-between;
+}

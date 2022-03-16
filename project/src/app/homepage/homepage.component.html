@@ -1,28 +1,28 @@
-<!-- <h1>Welcome to Homepage!</h1>
-<a routerLink="./showuser">Show User Details</a> -->
-<div class="container1">
-    <div class="modal fade" id="loginModel">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-body">
-                    <form #loginForm="ngForm" >
-                        <div class ="loginbox">
-                        <h1>Login</h1>
-                        <p>Username</p>
-                        <input type="text" name="loginId" ngModel #loginId="ngModel" required class="form-control"  placeholder = "Enter Username">
-                        <p>Password</p>
-                        <input type="password" name="password" ngModel #password="ngModel" required class="form-control" placeholder="Enter Password">
-                        <input type ="submit" (click)="loginSubmit(loginForm.value)"[disabled]="!loginForm.valid" name ="" value="login" data-dismiss="modal">
-                        <div class="xyz">
-                        <a href="#" style="font-size: large;line-height: 35px;">forgot your password?</a><br>
-                        <a class="nav-link" routerLink="/register" data-dismiss="modal" style="font-size: large;line-height: 35px;">Don't have an account?</a>
-                    </div>
-                    </div>
-                </form>
-                </div>
-            </div>
-        </div>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FitFoodie</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/homepage">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink="/register">Register</a>
+          </li>
+        </ul>
+      </div>
     </div>
+  </nav>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -46,32 +46,31 @@
             <a href="#contactus">Contact</a>
         </div>
      </div> -->
-     <header>
+     <!-- <header>
         <div class="wrapper">
             <div class="logo">
                 <img src="src/assets/Images/logo.JPG" alt="">
             </div>
     <ul class="nav-area">
-    <!-- <li><a href="#">Home</a></li> -->
+    <li><a href="#">Home</a></li>
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#contactus">Contact</a></li>
     </ul>
     </div>
-    </header>
+    </header> -->
 
     <div class="main_container" id="home">
 
     <div class="banner_image">
         <div class="banner_content">
-            <h1>Weight loss begins with you <br> and ends with Healthy Byte.<br><br> 
-                <span>Get started on your journey <br>to lose your weight for good.</span></h1><br>
+            <h1><span>Weight loss begins with you <br> and ends with Healthy Byte.<br><br>Get started on your journey <br>to lose your weight for good.</span></h1><br>
         </div>
     </div>
 
     <div class="about" id="about">
         <h1 class="title">About Us</h1>
-        <p>We at HealthyByte believe in healthy practices and encourage our users not to follow crash, starvation diets, and instead opt for healthy weight loss, weight gain and muscle building. Once a user goes Premium, our dieticians understand the lifestyle challenges, food preferences, allergies, and other key details to create a personalized diet plan that fits in their lifestyle.</p>
+        <p>We at FitFoodie believe in healthy practices and encourage our users not to follow crash, starvation diets, and instead opt for healthy weight loss, weight gain and muscle building. Once a user goes Premium, our dieticians understand the lifestyle challenges, food preferences, allergies, and other key details to create a personalized diet plan that fits in their lifestyle.</p>
         <!-- <div class="btn"><a href="#">Learn More</a></div> -->
     </div>
 

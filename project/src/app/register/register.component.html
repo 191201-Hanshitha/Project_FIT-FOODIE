@@ -3,6 +3,30 @@
 <input type="password" placeholder="PASSWORD" [(ngModel)]='user.password'><br/>
 
 <input type="submit" value="REGISTER" (click)="registerUser()"> -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">FIT-FOODIE</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav me-auto">
+        <li class="nav-item">
+          <a class="nav-link active" routerLink="/homepage">Home
+            <span class="visually-hidden">(current)</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink = "/login">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink ="/register">Register</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
 <!DOCTYPE html>
   <html>
@@ -16,14 +40,14 @@
             </div>
 
             <h2 class="name">User Name</h2>
-            <input class="uname" type="text" name="uname" [(ngModel)]='user.uname' required><br>
+            <input class="uname" type="text" name="uname" [(ngModel)]='user.uname' required minlength=4 maxlength="20"><br>
             
             <h2 class="name">Email</h2>
           <input class="email" type="text" name="email" [(ngModel)]='user.email' #cpass1="ngModel"  pattern="[^ @]*@[^ @]*" required >
           <label for="email"></label>
         
           <h2 class="name">Password</h2>
-          <input class="password" type="password" name="password" [(ngModel)]='user.password' required>
+          <input class="password" type="password" name="password" [(ngModel)]='user.password' required minlength=4 maxlength="20">
 
           <h2 class="name"></h2>
            <input class="btn1" type="submit" value = "Register" (click)="registerUser()">

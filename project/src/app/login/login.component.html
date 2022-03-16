@@ -1,8 +1,50 @@
 <head>
     <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
 </head>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">FIT-FOODIE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+  
+      <div class="collapse navbar-collapse" id="navbarColor01">
+        <ul class="navbar-nav me-auto">
+          <li class="nav-item">
+            <a class="nav-link active" routerLink="/homepage">Home
+              <span class="visually-hidden">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink = "/login">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" routerLink ="/register">Register</a>
+          </li>
+          <!-- <li class="nav-item">
+            <a class="nav-link" routerLink = "/showuser">Show User Details</a>
+          </li> -->
+          
+          <!-- <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Action</a>
+              <a class="dropdown-item" href="#">Another action</a>
+              <a class="dropdown-item" href="#">Something else here</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#">Separated link</a>
+            </div>
+          </li>-->
+        </ul>
+        <!-- <form class="d-flex">
+          <input class="form-control me-sm-2" type="text" placeholder="Search">
+          <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
+        </form>  -->
+      </div>
+    </div>
+  </nav>
 
 <div class="bg-img">
     <br>
@@ -14,12 +56,12 @@
 
         <div class="input-group">
         <span class="input-group-addon"><i class ="glyphicon glyphicon-user"></i></span>
-        <input type="text" placeholder="Enter Username" ngModel name="username" #username=ngModel class="form-control" required minlength=2 maxlength="20"><br>
+        <input type="text" placeholder="Enter Username" ngModel name="username" #username=ngModel class="form-control" required minlength=4 maxlength="20"><br>
         </div>
 
         <div class = "input-group">
         <span class ="input-group-addon"><i class ="glyphicon glyphicon-lock"></i></span>
-        <input type = "password" placeholder= "Enter Password" ngModel name="password" #password = ngModel class = "form-control" required minlength=2 maxlength="20"><br>
+        <input type = "password" placeholder= "Enter Password" ngModel name="password" #password = ngModel class = "form-control" required minlength=4 maxlength="20"><br>
         </div>
         <div class="center">
         <button class="btn btn-primary" [disabled] = "!loginForm.valid">Submit</button>

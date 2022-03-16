@@ -32,5 +32,8 @@ export class UserService {
      return this.httpClient.get('http://localhost:3000/login/'+loginForm.username+"/"+loginForm.password).toPromise();
    }
 
+   deleteUser(user:any){
+    return this.httpClient.delete('http://localhost:3000/delete/'+user.username);
+  }
    
   }

@@ -12,10 +12,10 @@ mat-toolbar {
 
 .parent{
     border : 1px white;
-    margin : 1rem;
+    margin : 0rem;
     padding: 3rem 3rem;
     text-align: center;
-    background-color: rgb(224, 205, 255); 
+    background-color: rgba(255, 205, 253, 0.568); 
 }
 .child{
     display : inline-block;
